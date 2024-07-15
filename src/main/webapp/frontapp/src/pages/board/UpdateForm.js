@@ -1,11 +1,8 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 function UpdateForm(props) {
-    return (
-        <div>
-            
-        </div>
-    );
+    const { id } = useParams();
 }
 
 export default UpdateForm;

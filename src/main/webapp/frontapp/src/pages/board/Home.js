@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div>
       {model.boards.map((board) => (
-        <BoardItem key={board.id} id={board.id} title={board.title} />
+        <BoardItem key={board.id} id={board.id} title={board.title} page={page} />
       ))}
 
       <br />
