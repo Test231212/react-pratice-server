@@ -43,4 +43,11 @@ public class LoginInterceptor implements HandlerInterceptor{
             throw new Exception(e.getMessage());
         }
     }
+
+    @Override
+    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+        HttpSession session = request.getSession();
+        session.invalidate();
+    }
 }
+
